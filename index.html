@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Sal Marino</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <!-- Top menu bar and menu options -->
+  <body>
+        <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand pl-4 pr-4" style='background-color: rgb(96, 128, 143);' href="./index.html">Weather Data Visualization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse offset-9" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./Max_Temp.html">Max Temp</a>
+                <a class="dropdown-item" href="./Cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="./Humidity.html">Humidity</a>
+                <a class="dropdown-item" href="./Windspeed.html">Windspeed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="./Data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Begin Landing Page -->
+  <!-- Container for the whole content (everything between the nav bar & copyright bar) -->
+  <div class="container" style='background-color: rgb(99, 96, 102); height:100%'>
+    <!-- This is the background page -->
+    <div class="row">
+      <div class="col-12 col-md-7 pad top bg-white m-2">
+        <div class="panel panel-default">
+          <div class="panel-body text-black">
+            <h2 class="pt-2 pb-2">Climate Data Exploration</h2>
+            <hr>
+            <img src="images/Max Temp vs City Latitude_SM.png" style="width:65%;float: right;" 
+            alt="Plot shows that the temperature is lower near the poles.">
+              <p class = "text">The purpose of this project was to analyze how weather changes as the equator is approached. To perform this analysis, data was pulled from the OpenWeatherMap API to assemble a dataset on hundreds of cities. <br> 
+            
+                After compiling the dataset, Matplotlib was utilized to plot aspects of weather compared to latitude. Factors observed included: temperature, cloudiness, wind speed and humidity. This site provides the source data and the visualizations that were derived when completing this analysis. <br> 
+                </p>
+                <br>        
+          </div>
+        </div>
+      </div>
+      <!-- This is the left hand box with all the summary of images. -->
+
+      <div class="col-6 col-md-4 pad top bg-white m-2">
+          <div class="panel panel-default">
+              <div class="panel-body text-black">
+                <h2 class="pt-2 pb-2">Visualizations</h2>
+                <hr>
+                <div class="row" >
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="./Max_Temp.html"><img class = "img img-responsive plots" src="images/Max Temp vs City Latitude_SM.png" style="width:100%" alt=""></a></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="./Humidity.html"><img class = "img img-responsive plots" src="images/Humidity vs City Lat_SM.png" style="width:100%" alt=""></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="./Cloudiness.html"><img class = "img img-responsive plots" src="images/Cloudiness vs City Latitude.png" style="width:100%" alt=""></a></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="./Windspeed.html"><img class = "img img-responsive plots" src="images/Windspeed_SM.png" style="width:100%" alt=""></a></div>
+                </div>
+                         
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+      
+      
+      <!-- Begin Copyright -->
+      <div class="container-fluid">
+        <div class="fixed-bottom pt-2 pb-2 m-0 d-flex justify-content-center bg-light">
+          <span>&copy; Sal Marino </span>
+        </div>
+      </div>
+  </body>
+</html>
